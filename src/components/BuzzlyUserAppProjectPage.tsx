@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'; 
 import { ArrowLeft, Users, TrendingUp, Zap, Heart, X } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from './ui/dialog';
@@ -734,7 +734,8 @@ export default function BuzzlyUserAppProjectPage({ onBack, onProjectClick }: Buz
             </div>
           </div>
 
-          {/* Impact Stories */}
+          {/* Impact Stories (commented out correctly) */}
+          {/*
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             <div className="bg-white/5 rounded-xl p-8 border border-white/10">
               <h4 className="mb-4">Content Creator Impact</h4>
@@ -751,8 +752,10 @@ export default function BuzzlyUserAppProjectPage({ onBack, onProjectClick }: Buz
               <p className="text-[#6A0DAD]">- Michael T., Agency Director</p>
             </div>
           </div>
+          */}
 
-          {/* Business Impact */}
+          {/* Business Impact (commented out correctly) */}
+          {/*
           <div className="bg-gradient-to-br from-[#6A0DAD]/10 to-transparent rounded-2xl p-8 md:p-12 border border-[#6A0DAD]/20">
             <h3 className="text-2xl mb-6">Business Outcomes</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -773,6 +776,7 @@ export default function BuzzlyUserAppProjectPage({ onBack, onProjectClick }: Buz
               </div>
             </div>
           </div>
+          */}
         </div>
       </section>
 
@@ -792,6 +796,7 @@ export default function BuzzlyUserAppProjectPage({ onBack, onProjectClick }: Buz
                   <p className="text-white/60">The research overwhelmingly showed that users primarily interact with social media tools on mobile devices. Designing for mobile first, then scaling up to desktop, resulted in a more cohesive and user-friendly experience across all devices. This approach also forced prioritization of essential features, leading to a cleaner interface.</p>
                 </div>
               </div>
+
               <div className="flex gap-4">
                 <div className="w-8 h-8 rounded-full bg-[#6A0DAD] flex items-center justify-center flex-shrink-0">
                   <span className="text-[#212529]">2</span>
@@ -801,6 +806,7 @@ export default function BuzzlyUserAppProjectPage({ onBack, onProjectClick }: Buz
                   <p className="text-white/60">Implementing both light and dark themes wasn't just about aesthetics—it significantly impacted user satisfaction and app usage patterns. Users appreciated the ability to choose what works best for their environment, leading to longer session times and higher engagement. This reinforced the importance of giving users control over their experience.</p>
                 </div>
               </div>
+
               <div className="flex gap-4">
                 <div className="w-8 h-8 rounded-full bg-[#6A0DAD] flex items-center justify-center flex-shrink-0">
                   <span className="text-[#212529]">3</span>
@@ -810,6 +816,7 @@ export default function BuzzlyUserAppProjectPage({ onBack, onProjectClick }: Buz
                   <p className="text-white/60">While individual users appreciated scheduling and analytics features, agency teams found the most value in collaboration tools like approval workflows and client management. This insight highlighted the importance of designing for both individual and team use cases, as they often coexist in the same platform but have different priorities.</p>
                 </div>
               </div>
+
               <div className="flex gap-4">
                 <div className="w-8 h-8 rounded-full bg-[#6A0DAD] flex items-center justify-center flex-shrink-0">
                   <span className="text-[#212529]">4</span>
