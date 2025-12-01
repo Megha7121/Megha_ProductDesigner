@@ -292,7 +292,7 @@ export default function RevolvProjectPage({ onBack, onProjectClick }: RevolvProj
             <h3 className="text-2xl mb-6 text-[#03FF68]">Information Architecture</h3>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
               <div className="rounded-2xl overflow-hidden border border-white/10">
-                <ImageWithFallback src="https://images.unsplash.com/photo-1753715613388-7e03410b1dce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzeXN0ZW0lMjBhcmNoaXRlY3R1cmUlMjBkaWFncmFtfGVufDF8fHx8MTc2MjA1NjA1NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Information Architecture" className="w-full h-auto" />
+                <ImageWithFallback src="https://media.istockphoto.com/id/1476091270/photo/programmers-are-meeting-to-make-mobile-app-systems-more-modern-and-easier-to-use-and-meet-the.jpg?s=612x612&w=0&k=20&c=SmarISMNAl6MZWwHKk0mvv2VHsLyCOolfhHuY029fzA=" alt="Information Architecture" className="w-full h-auto" />
               </div>
               <div>
                 <p className="text-white/60 leading-relaxed mb-6">
