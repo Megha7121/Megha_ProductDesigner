@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { ArrowLeft, Zap, Clock, Users, TrendingUp, X } from 'lucide-react';
-import svgPaths from '../imports/svg-i6efgtl4im';
-import imgImageWithFallback from "figma:asset/3cd066fc08e285910372ddb8633e097ca738002b.png";
 import imgImageWithFallback1 from "figma:asset/2be56dbc2cbfe1bd05afd448a0a4551c6cd808f1.png";
 import imgImageWithFallback2 from "figma:asset/401c12182836a8766543477766ca0758ccf30464.png";
 import imgImageWithFallback3 from "figma:asset/c3dbfa092f5b65201c7464715ad9fb3c40925efd.png";
@@ -705,46 +703,6 @@ export default function BuzzlyProjectPage({ onBack, onProjectClick }: BuzzlyProj
               <p className="text-white/60">User Satisfaction</p>
             </div>
           </div>
-
-          {/* Impact Stories */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <div className="bg-white/5 rounded-xl p-8 border border-white/10">
-              <h4 className="mb-4">Social Media Manager</h4>
-              <p className="text-white/60 mb-4">
-                "Buzzly has transformed how I manage my clients. What used to take 3 hours now takes just over an hour. The approval workflow alone has saved our agency countless hours."
-              </p>
-              <p className="text-[#6A0DAD]">- Sarah M., Digital Agency</p>
-            </div>
-            <div className="bg-white/5 rounded-xl p-8 border border-white/10">
-              <h4 className="mb-4">Small Business Owner</h4>
-              <p className="text-white/60 mb-4">
-                "Finally, a tool that's simple enough for someone like me who doesn't have a marketing team. I can schedule a week's worth of posts in 30 minutes."
-              </p>
-              <p className="text-[#6A0DAD]">- James C., Local Business</p>
-            </div>
-          </div>
-
-          {/* Business Impact */}
-          <div className="bg-gradient-to-br from-[#6A0DAD]/10 to-transparent rounded-2xl p-8 md:p-12 border border-[#6A0DAD]/20">
-            <h3 className="text-2xl mb-6">Business Outcomes</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div>
-                <p className="text-3xl text-[#6A0DAD] mb-2">5K+</p>
-                <p className="text-white/60">Active Users</p>
-                <p className="text-sm text-white/40 mt-2">Within 4 months of launch</p>
-              </div>
-              <div>
-                <p className="text-3xl text-[#6A0DAD] mb-2">88%</p>
-                <p className="text-white/60">Retention Rate</p>
-                <p className="text-sm text-white/40 mt-2">Month-over-month user retention</p>
-              </div>
-              <div>
-                <p className="text-3xl text-[#6A0DAD] mb-2">1.2M+</p>
-                <p className="text-white/60">Posts Scheduled</p>
-                <p className="text-sm text-white/40 mt-2">Through the platform to date</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -840,7 +798,7 @@ export default function BuzzlyProjectPage({ onBack, onProjectClick }: BuzzlyProj
       )}
 
       {/* Image Modal */}
-      <Dialog open={selectedImage !== null} onOpenChange={() => setSelectedImage(null)}>
+      <Dialog open={selectedImage !== null} onOpenChange={(open) => { if (!open) setSelectedImage(null); }}>
         <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 bg-[#0a0a0a]/95 backdrop-blur-xl border border-white/20">
           <DialogTitle className="sr-only">
             {selectedImage?.alt || 'Wireframe Preview'}
